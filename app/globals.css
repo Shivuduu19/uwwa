@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: #f3f3f1;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}*/
+
+.w-layout-hflex {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+
+}
+
+.w-layout-vflex {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.footer-item {
+  justify-content: space-between;
+}
+
+.brand {
+  transition: opacity .2s;
+}
+
+/* .w-embed {
+  /* align-self: flex-start; */
+/* } */
+
+*/ .carousel-content {
+
+  gap: .36em;
+  flex: none;
+  padding-left: .36em;
+}
+
+.carousel-text {
+  font-size: 1em;
+  transition: all .2s;
+}
+
+.footer-ul {
+  grid-row-gap: .5rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.footer-li {
+  display: none;
+}
+
+.hor-line {
+  background-color: var(--white);
+  width: 8px;
+  height: 2px;
+}
+
+.vert-line {
+  background-color: var(--white);
+  width: 2px;
+  height: 8px;
+  position: absolute;
+}
+
+body {
+  color: #262625;
+  background-color: #f3f3f1;
+  letter-spacing: -.01em;
+  font-family: Ppmori, sans-serif;
+  font-size: 16px;
+}
+
+.w-slide {
+  vertical-align: top;
+  white-space: normal;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.author-img {
+  background-image: url(../public//UWWA\ _\ SaaS\ Design\ Studio/emptyprofile.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 54px;
+  height: 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.author-logo {
+  background-color: #fff;
+  border-radius: 44px;
+  flex: none;
+  padding: 8px 12px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
