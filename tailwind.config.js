@@ -16,6 +16,12 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        arrow: 'arrow ease-in-out'
+      },
+      keyframes: {
+        arrow: { '0%': { strokeDasharray: '0 1250' }, '100%': { strokeDasharray: '1250 0' } }
+      }
     },
   },
   plugins: [],

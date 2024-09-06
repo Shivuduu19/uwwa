@@ -44,8 +44,7 @@
   /* align-self: flex-start; */
 /* } */
 
-*/ .carousel-content {
-
+.carousel-content {
   gap: .36em;
   flex: none;
   padding-left: .36em;
@@ -83,7 +82,7 @@ body {
   color: #262625;
   background-color: #f3f3f1;
   letter-spacing: -.01em;
-  font-family: Ppmori, sans-serif;
+  /* font-family: Ppmori, sans-serif; */
   font-size: 16px;
 }
 
@@ -95,6 +94,12 @@ body {
   height: 100%;
   display: inline-block;
   position: relative;
+}
+
+.stroke {
+  stroke-dasharray: 1250 0;
+  animation-duration: 4s;
+  animation-fill-mode: both;
 }
 
 .author-img {
@@ -114,6 +119,20 @@ body {
   flex: none;
   padding: 8px 12px;
 }
+
+/* .leftarrow svg:hover path {
+  animation: animate-leftarrow 4s;
+} */
+
+/* @keyframes animate-leftarrow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 1250;
+  }
+} */
 
 @layer utilities {
   .text-balance {

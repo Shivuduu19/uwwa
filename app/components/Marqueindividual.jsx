@@ -2,7 +2,7 @@ import React from 'react'
 
 const Marqueindividual = ({ transfer }) => {
     return (
-        <div style={{ transform: `translate3d(${transfer}%, 0, 0)` }} class="w-layout-hflex carousel-content " >
+        <div style={{ transform: `translate3d(${transfer}%, 0, 0)` }} class="w-layout-hflex LL:justify-between carousel-content " >
             <div class="w-embed">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="4.31033" width="1.37931" height="10" fill="#8D8D8D"></rect>

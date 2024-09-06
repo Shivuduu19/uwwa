@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { semiboldppmori } from '@/utils/fonts'
+import { regularppmori, semiboldppmori } from '@/utils/fonts'
 
 const Hoverreveallogo = ({ img, craft, no }) => {
 
@@ -47,10 +47,10 @@ const Hoverreveallogo = ({ img, craft, no }) => {
         <motion.div whileHover='hover' className="pt-[2rem] btl:gap-x-[4vw] btl:cursor-pointer grid auto-cols-[1fr] grid-rows-[auto] cursor-none gap-x-[5vw] grid-cols-[.5fr_.5fr_1fr_minmax(200px,530px)] items-start px-[10px] transition-colors duration-[.2s] relative overflow-hidden">
             <div style={{ opacity: .4 }} className="items-baseline flex  row-span-1 col-span-1">
                 {/* <h4 className="my-0 text-[1.125rem] font-semibold leading-[1.33]">/</h4> */}
-                <h4 className="my-0 text-[1.125rem] font-semibold leading-[1.33]">{no}</h4>
+                <h4 className={`my-0 text-[1.125rem] font-semibold leading-[1.33] ${regularppmori.className} `}>{no}</h4>
                 {/* <h4 className="my-0 text-[1.125rem] font-semibold leading-[1.33]">/</h4> */}
             </div>
-            <div className="opacity-[.4] row-span-1 col-span-1 items-center flex">
+            <div className={`opacity-[.4] row-span-1 col-span-1 items-center flex ${regularppmori.className}`}>
                 <h4 className="leading-[1] my-0 text-[1.125rem] font-semibold ">(</h4>
                 <div class="w-layout-hflex justify-center items-center">
                     <div class="hor-line"></div>
@@ -69,7 +69,7 @@ const Hoverreveallogo = ({ img, craft, no }) => {
             </div>
             <div className="row-span-1 col-span-1 [grid-row-gap:1.5rem] flex items-start flex-col   ">
                 <div className="">
-                    <h4 className={`uppercase ${semiboldppmori.className}`}>{craft}</h4>
+                    <h4 className={`uppercase ${semiboldppmori.className} ${semiboldppmori.className}`}>{craft}</h4>
                 </div>
             </div>
         </motion.div>
