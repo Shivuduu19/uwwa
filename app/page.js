@@ -14,11 +14,13 @@ import first from '@/public/UWWA _ SaaS Design Studio/65758382fab7d131285c7b13_F
 import third from '@/public/UWWA _ SaaS Design Studio/6556054b28cf849cc7b7aff0_Figure 3.svg'
 import seven from '@/public/UWWA _ SaaS Design Studio/6556054c84a110213d53d672_Figure 7.svg'
 import four from '@/public/UWWA _ SaaS Design Studio/6556054bda4a7160b4368226_Figure 4.svg'
-import logo from '@/public/UWWA _ SaaS Design Studio/6575a2973dcb29ab010e4cff_uwwa-logo.svg'
+
 import { regularppmori, semiboldppmori } from "@/utils/fonts";
 import Hoverreveallogo from "./components/Hoverreveallogo";
 import Testimonials from "./components/Testimonials";
 import Journey from "./components/Journey";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 export default function Home() {
   const textscrolref = useRef(null)
   const wrapper = useRef(null)
@@ -139,52 +141,13 @@ export default function Home() {
     }
   }
 
+
+
+
   return (
     <>
       <main >
-        <section className="py-[100px] px-[5%] xl:px-[64px] pt-[190px] pb-[30px]">
-          <div className="w-full mx-auto relative">
-            <div className="flex gap-[80px] LL:gap-[150px] flex-wrap justify-between items-stretch mb-[40px]">
-              <div className="flex-none items-stretch flex flex-col">
-                <div>
-                  <h1 className={` ${semiboldppmori.className}  my-0 text-[8vw] LL:text-[120px] font-semibold leading-[1]`}>
-                    We design first
-                    <br />
-                    <span className="relative text-[1em] ">&nbsp;&nbsp;&nbsp;&nbsp;
-                      <Image src={mainarrow} alt="" fill={true} />
-                    </span>
-                    &nbsp;class SaaS&nbsp;
-                    <span className="relative text-[1em]">&nbsp;&nbsp;&nbsp;
-                      <Image src={circlestar} alt="" fill={true} />
-                    </span>
-                  </h1>
-                </div>
-              </div>
-              <div className="flex flex-col gap-[20px] justify-between items-start min-w-[260px] max-w-[425px] pt-[10px] pb-[10px] flex-1">
-                <div className="opacity-80">
-                  <p className={` ${regularppmori.className} text-[#262625] text-left traacking-[-.02em] uppercase text-[.875em] font-semibold leading-[1.71]`}>
-                    <span className="text-[#baa9a9]">Uwwa </span>
-                    is a design studio focusing solely on SaaS products. We help businesses achieve goals through design.
-                  </p>
-                </div>
-                <div>
-                  <a href="" className="flex gap-[5px] font-semibold max-w-full ">
-                    <div className="flex justify-center items-center ">
-                      <Image src={downarrow} alt="" />
-                    </div>
-                    <div className={`${regularppmori.className} flex h-[19px] flex-col relative overflow-hidden`}>
-                      <div className="text-[.825rem] font-semibold leading-[1.57]">Explore works</div>
-                      <div className="text-[.825rem] font-semibold leading-[1.57]">Explore works</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <Marquee />
-
-          </div>
-        </section>
+        <Hero />
         <section className="py-0 px-[5%] block xl:px-[64px] h-min relative">
           <figure className="mb-0 w-full ">
             <Image src={heroillsutration} alt="" className="rounded-[22px] w-full" />
@@ -254,30 +217,7 @@ export default function Home() {
         <Testimonials />
         <Journey />
       </main >
-      <article className="pb-[18px] xl:px-[64px] pt-[100px] relative">
-        <div className="w-full mx-auto relative">
-          <div className="grid auto-cols-[1fr] gap-x-[90px] gap-col-[100px] grid-rows-[auto] grid-cols-[minmax(max-content,auto)_max-content_max-content_minmax(auto,130px)]">
-            <div id="w-node-_257721c6-3ed8-277f-dbb1-60931b0806c9-f02c5440" className="w-layout-vflex footer-item">
-              <a href="#header" className="brand w-inline-block">
-                <Image src={logo} alt="" width={80} height={29} className="" />
-                {/* <img src="https://cdn.prod.website-files.com/6554adf723d82cf38df7e63b/6575a2973dcb29ab010e4cff_uwwa-logo.svg" loading="lazy" width="80" height="29" alt="" className="img-contain"> */}
-              </a>
-            </div>
-
-            <ul role="list" className="footer-ul"><li className="footer-li"><a href="#" className="p2-b footer-link">Home</a></li><li className="footer-li"><a href="#" className="p2-b footer-link">Services</a></li><li className="footer-li"><a href="#" className="p2-b footer-link">Process</a></li><li className="footer-li"><a href="#" className="p2-b footer-link">Case studies</a></li></ul>
-            <ul role="list" className="footer-ul"><li className="footer-li"><a href="#" className="p2-b footer-link">Instagram</a></li><li className="footer-li"><a href="#" className="p2-b footer-link">LinkedIn</a></li><li className="footer-li"><a href="#" className="p2-b footer-link">Twitter</a></li></ul>
-
-            <div className="justify-end">
-              <a href="#header" aria-label="to-the-top" id="w-node-_257721c6-3ed8-277f-dbb1-60931b0806e4-f02c5440" data-w-id="257721c6-3ed8-277f-dbb1-60931b0806e4" className="cursor-none xl:cursor-pointer w-inline-block">
-                <div id="w-node-_257721c6-3ed8-277f-dbb1-60931b0806e5-f02c5440" data-w-id="257721c6-3ed8-277f-dbb1-60931b0806e5" className="[box-shadow:0_0_0_0_#262625] transition-[box-shadow] duration-[1s] [transition-timing-function:cubic-bezier(0.19,1,0.22,1)] bg-[#262625] rounded-[50%] w-[80px] h-[80px] flex items-center justify-center" >
-                  <svg width="32" height="46" viewBox="0 0 32 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path className="stroke" d="M16 45L16 0.999999M16 0.999999L0.999999 15.3333M16 0.999999L31 15.3333" stroke="#fff" stroke-linecap="round"></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <a href="#" className="p2-l hidden opacity-40 footer-link-sm">Terms &amp; Conditions</a><a href="#" className="p2-l opacity-40 hidden footer-link-sm">Cookie Policy</a><div className="text-left [grid-area:2/5/3/3] opacity-40">© 2023 All rights reserved. All wrongs reversed.</div></div></div>
-      </article>
+      <Footer />
     </>
   );
 }

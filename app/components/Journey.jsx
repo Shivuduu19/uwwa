@@ -6,7 +6,7 @@ import third from '@/public/UWWA _ SaaS Design Studio/6556054b28cf849cc7b7aff0_F
 import { regularppmori, semiboldppmori } from '@/utils/fonts'
 import Image from 'next/image'
 import scrollSvg from 'scroll-svg'
-
+// import letsconnect from '../../public/UWWA _ SaaS Design Studio/letsconnect.svg'
 const Journey = () => {
     const getstarted = useRef(null)
     const elementRef = useRef(null);
@@ -253,7 +253,7 @@ const Journey = () => {
                                         <input className="text-[#f3f3f1] bg-[#fff0] border-0 border-solid border-[#000] border-b-[1px] border-b-[#f3f3f133] h-[47px] mb-0 pt-0 px-0 pb-[27px] text-[1rem] w-full leading-[1.42857] block" maxlength="256" name="email" data-name="Email" placeholder="Email" type="email" id="email" required="" fdprocessedid="sh8nlu" />
                                     </div>
                                     <textarea placeholder="About your project" maxlength="5000" id="field" name="field" data-name="Field" className="min-h-[47px] max-h-[150px] pb-0 h-auto text-[#f3f3f1] bg-[#fff0] border-0 border-solid border-[#000] border-b-[1px] border-b-[#f3f3f133]  mb-0 pt-0 px-0  text-[1rem] "></textarea>
-                                    <input type="submit" data-wait="Please wait..." className=" text-[#262625]  bg-[20px] bg-[length:18px_8px] pl-[3.4em] bg-[#f3f3f1] py-[1.57em] px-[1.43em] text-[14px] font-semibold leading-[1] transition-all duration-[.2s] flex relative cursor-pointer border-0 rounded-[99px] text-center flex-none  " value="Send a message" fdprocessedid="xli21h" />
+                                    <input type="submit" data-wait="Please wait..." className="white-btn-submit text-[#262625]     pl-[3.4em] bg-[#f3f3f1] py-[1.57em] px-[1.43em] text-[14px] font-semibold leading-[1] transition-all duration-[.2s] flex relative cursor-pointer border-0 rounded-[99px] text-center flex-none  " value="Send a message" fdprocessedid="xli21h" />
                                 </form>
                                 {/* <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success"><div class="p2-u">Thank you! <br />We will get in touch with you in 24 hours.</div></div><div class="error-message w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure"><div class="p2-u">an error occurred while submitting the form. <br />please check the entered data and try again.</div>
                   </div> */}

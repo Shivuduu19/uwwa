@@ -22,8 +22,8 @@ const Testimonials = () => {
             personname: `Maryna Protsenko`,
             role: `Product Manager`,
             company: belive,
-            main: `With no hesitation or doubt in my mind, I recommend working with Kristina to build out your design team`,
-            desc: `Borys' user-centric approach is something I really admire. He never settles for the surface-level design; instead, but instead dives deeper into the core user pain points and studies them, to ensure that design solution solves actual needs. Collaboration with Borys has been incredibly productive, and has been a significant factor in our ongoing success and growth.`,
+            main: `Kristina helped to assemble and coordinate a team of 120 talented designers around the world`,
+            desc: `Designers who consistently delivered high-quality work for different clients and projects. I would like to highlight that Kristina has exceptional interpersonal skills.`,
             image: maryan,
 
         },
@@ -31,8 +31,8 @@ const Testimonials = () => {
             personname: `Maryna Protsenko`,
             role: `Product Manager`,
             company: belive,
-            main: `Kristina helped to assemble and coordinate a team of 120 talented designers around the world`,
-            desc: `Borys' user-centric approach is something I really admire. He never settles for the surface-level design; instead, but instead dives deeper into the core user pain points and studies them, to ensure that design solution solves actual needs. Collaboration with Borys has been incredibly productive, and has been a significant factor in our ongoing success and growth.`,
+            main: `With no hesitation or doubt in my mind, I recommend working with Kristina to build out your design team`,
+            desc: `Kristina is thoughtful, takes the time to understand the needs of the client, is very hard working, and a true partner when it comes to finding the right design talent.`,
             image: maryan,
 
         }]
@@ -87,9 +87,9 @@ const Testimonials = () => {
                 <div className='w-full mx-auto relative w-layout-vflex'>
                     <div className='[grid-template-columns:minmax(101px,auto)_minmax(auto,max-content)_minmax(auto,528px)] gap-x-[8vw] justify-between w-full mt-auto grid-rows-[auto] auto-cols-[1fr] grid '>
                         <div class="opacity-80">
-                            <h1 class={`${regularppmori.className} uppercase object-fill text-[12px] font-normal leading-[2] my-0 ${regularppmori.className}`}>/ Testimonials /</h1>
+                            <h1 class={`${regularppmori.className} uppercase object-fill text-[12px] font-normal leading-[2] my-0 `}>/ Testimonials /</h1>
                         </div>
-                        <div className='row-span-1 col-span-1 '>
+                        <div className='row-span-1 col-span-1 w-layout-vflex '>
                             <h2 className={`relative my-0 text-[40px] font-semibold leading-[1.2] ${semiboldppmori.className} `}>
                                 Here’s what
                                 <br />
@@ -98,7 +98,7 @@ const Testimonials = () => {
                         </div>
                         <div className='w-full overflow-hidden '>
                             <div className='flex flex-col h-auto gap-y-[24px] bg-[rgb(255,255,255)]/[0] text-center relative '>
-                                <div ref={testimonyref} className='flex-1 z-[1] whitespace-nowrap  relative left-0 right-0 block mb-[-50px] overflow-hidden'>
+                                <div ref={testimonyref} className='flex-1 z-[1] whitespace-nowrap h-full  relative left-0 right-0 block  overflow-hidden'>
 
                                     {testimonies.map((testimony, index) =>
                                         <TestimonialINdividaul current={current} indexed={index} image={testimony.image} main={testimony.main} desc={testimony.desc} personname={testimony.personname} role={testimony.role} company={testimony.company} tranfer={translate} />

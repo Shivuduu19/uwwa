@@ -4,20 +4,20 @@ import React from 'react'
 
 const TestimonialINdividaul = ({ current, image, main, desc, personname, role, company, indexed, tranfer }) => {
     return (
-        <div style={{ transform: `translateX(${tranfer}px)` }} className={` ${current === indexed + 1 ? '[transition:all,_opacity_300ms_linear] opacity-[1]' : '[transition:all] opacity-0 invisible'}  slide  w-slide`} >
+        <div style={{ transform: `translateX(${tranfer}px)`, transitionDelay: '200ms' }} className={` ${current === indexed + 1 ? '[transition:all,_opacity_300ms_linear] opacity-[1]' : '[transition:all] opacity-0 invisible'}  slide  w-slide `} >
             <div className='gap-[24px] LL:gap-[164px] justify-between items-stretch flex flex-col'>
                 <div className='flex items-start relative overflow-hidden'>
-                    <div style={{ transform: `translate3d(0px,${current === indexed + 1 ? 0 : 20}px,0px)`, opacity: `${current === indexed + 1 ? 1 : 0}`, transitionDuration: `${current === indexed + 1 ? '0ms' : '300ms'}` }} className={`relative       ease-out transition-all  `}>
+                    <div style={{ transform: `translate3d(0px,${current === indexed + 1 ? 0 : 20}px,0px)`, opacity: `${current === indexed + 1 ? 1 : 0}`, transitionDuration: `${current === indexed + 1 ? '200ms' : '200ms'}`, transitionTimingFunction: `${current === indexed + 1 ? 'ease-in' : 'ease-out'}` }} className={`relative        transition-all  `}>
                         <h3 className={`${semiboldppmori.className} my-0 text-[22px] font-semibold leading-[1.55] `}>{main}</h3>
                         <p>&zwj;‍</p>
-                        <p className={`opacity-60 font-semibold ${regularppmori.className} leading-[1.88]`}>{desc}</p>
+                        <p className={`opacity-60 whitespace-normal text-left my-0 font-semibold ${regularppmori.className} leading-[1.88]`}>{desc}</p>
                     </div>
                 </div>
                 <div className='flex flex-col items-stretch justify-between'>
                     <div className='flex flex-wrap justify-between items-center'>
                         <div className='flex  items-center gap-[1rem] justify-between'>
                             <figure className='author-img rounded-[12px] m-0'>
-                                <Image src={image} alt='' fill sizes="(max-width: 479px) 31vw, (max-width: 1279px) 66px, (max-width: 1439px) 5vw, 66px" className='w-full h-full object-cover' />
+                                <Image style={{ transform: `${current === indexed + 1 ? 'scale3d(1, 1, 1)' : 'scale3d(1.1, 1.1, 1)'}`, willChange: `${current === indexed + 1 ? 'transform' : 'scale3d(1.1, 1.1, 1)'}` }} src={image} alt='' fill sizes="(max-width: 479px) 31vw, (max-width: 1279px) 66px, (max-width: 1439px) 5vw, 66px" className='w-full transition-all [transform-style:preserve-3d] duration-200 h-full object-cover' />
                             </figure>
                             <div className='w-layout-vflex'>
                                 <div class="overflow-hidden">

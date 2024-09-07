@@ -67,7 +67,7 @@ const Hoverreveallogo = ({ img, craft, no }) => {
 
                 </motion.div>
             </div>
-            <div className="row-span-1 col-span-1 [grid-row-gap:1.5rem] flex items-start flex-col   ">
+            <div className="row-span-1 col-span-1 gap-[1.5rem] w-layout-vflex   ">
                 <div className="">
                     <h4 className={`uppercase ${semiboldppmori.className} ${semiboldppmori.className}`}>{craft}</h4>
                 </div>

@@ -84,6 +84,7 @@ body {
   letter-spacing: -.01em;
   /* font-family: Ppmori, sans-serif; */
   font-size: 16px;
+  line-height: 1.6;
 }
 
 .w-slide {
@@ -118,6 +119,14 @@ body {
   border-radius: 44px;
   flex: none;
   padding: 8px 12px;
+}
+
+.white-btn-submit {
+  background-image: url(../public/btnarrow.svg);
+  background-position: 20px;
+  background-repeat: no-repeat;
+  background-size: 18px 8px;
+
 }
 
 /* .leftarrow svg:hover path {

@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from '@/public/UWWA _ SaaS Design Studio/6575a2973dcb29ab010e4cff_uwwa-logo.svg'
-import { color, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import letsconnect from '@/public/letsconnect.svg'
 import { regularppmori } from '@/utils/fonts'
 const Header = () => {
@@ -50,7 +50,7 @@ const Header = () => {
                             <Image src={letsconnect} alt='' width={18} height={8} />
                         </div>
                         <motion.div variants={buttonvar} className='bg-[#a4afb5] [transform:translate3d(0%,0%,0px)_scale3d(1,1,1)_rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)_skew(0deg,0deg);] rounded-[50%] w-[54px] h-[54px] absolute top-full left-[-54px]'></motion.div>
-                        <motion.div variants={letsconect} className={`${regularppmori.className}relative`}>Let's connect</motion.div>
+                        <motion.div variants={letsconect} className={`${regularppmori.className}relative z-[1]`}>Let's connect</motion.div>
                     </motion.a>
                 </div>
             </div>
